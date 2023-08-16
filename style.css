@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#audio-input {
+    max-width: 200px;
+}
+
+#player {
+    background-color: red;
+    padding: 10px;
+}
+
+#player #info {
+   display: flex;
+   justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.player-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-container, #time-slider {
+    width: 100%;
+}
+
+.controls {
+    height: 28px;
+    padding-bottom: 2px;
+}
+
+.play, .pause {
+    height: 32px;
+}
+
+.custom-file-input {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .custom-file-input input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    opacity: 0;
+    outline: none;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .custom-file-input label {
+    display: inline-block;
+    border: none;
+  }
+  
+  .custom-file-input img {
+    width: 28px;
+    height: 28px;
+  }
+  
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Player</title>
+</head>
+<body>
+    
+    <main>
+        <div id="playlist">
+
+        </div>
+
+        <div id="player">
+            <div id="info">
+                <div id="info-texts">
+                    <h1>Título</h1>
+                    <p>Artista</p>
+                </div>
+                <img src="images/preto.png" alt="Imagem do áudio" width="50" height="50">
+            </div>
+
+            <div class="custom-audio-player">
+                <audio id="audio-player">
+                    <source src="audios/audio.mp3" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+                
+                <div class="player-controls">
+                    <div class="slider-container">
+                        <input type="range" id="time-slider" min="0" value="0">
+                    </div>
+
+                    <div class="time">
+                        <span id="current-time">0:00</span>
+                        <span id="duration">0:00</span>
+                    </div>
+
+                    <div class="buttons">
+                        <input id="repeat" type="image" src="images/icons/repeat.png" alt="" height="28" style="margin-top: 4px;">
+                        
+                        <div id="controls">
+                            <input id="previous" class="controls" type="image" src="images/icons/previous.png" alt="">
+                            <input id="play-pause-button" class="play" type="image" src="images/icons/play.png" alt="">
+                            <input id="next" class="controls" type="image" src="images/icons/next.png" alt="">
+                        </div>
+                        
+                        <div class="custom-file-input">
+                            <input type="file" id="audio-input" accept="audio/*" multiple>
+                            <label for="file-input">
+                              <img src="images/icons/add-list.png" alt="">
+                            </label>
+                          </div>                          
+                        <!--<button id="speed">1.00x</button>-->
+                    </div>
+                </div>
+            </div>       
+        </div> 
+    </main>
+</body>
+</html>
